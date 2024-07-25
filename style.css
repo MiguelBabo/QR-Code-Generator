@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+#app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1b1b1b;
+}
+
+#app #container{
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+}
+
+#app #container #input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#app #container #input input{
+    width: 18vw;
+    padding: 10px;
+    border-radius: 8px;
+    border: solid 2px #000;
+}
+
+#app #container #button button{
+    width: 18vw;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #486aff;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#app #container #imageBox{
+    width: 18vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px){
+    #app #container #button button,
+    #app #container #input input,
+    #app #container #imageBox
+    {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 512px){
+    #app #container #button button,
+    #app #container #input input,
+    #app #container #imageBox
+    {
+        width: 70vw;
+    }
+}
+
